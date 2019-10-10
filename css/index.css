@@ -226,7 +226,7 @@ header a {
   width: 100%;
   text-align: center;
   padding-bottom: 0.7rem;
-  margin: 1.3rem;
+  margin: 1.3rem 0;
   border-bottom: 2px solid #ace5ff;
 }
 .left-content .intro h1 {
