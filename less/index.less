@@ -54,8 +54,9 @@ table {
 }
 
 .bordered-bottom{
-	border-bottom: 2px solid rgb(172, 229, 255);
+	border-bottom: @bottom-border-color;
 }
+@bottom-border-color: 2px solid rgb(172, 229, 255);;
 .paragraph-set{
 	text-align: center;
 	h2{
@@ -88,11 +89,13 @@ table {
 	}
 	p{
 		font-size: 1.7rem;
+		margin-bottom: 1.5rem;
 	}
 }
 .background-color{
-	background-color: azure;
+	background-color: @background-color;
 }
+@background-color: Azure;
 
 html, body {
 	height: 100%;
@@ -101,6 +104,7 @@ html, body {
 
 html{
 	font-size: 62.5%;
+	background-color: aliceblue;
 }
 
 h1, h2, h3, h4, h5 {
@@ -116,8 +120,7 @@ p{
 body{
 	margin:0 auto;
 	width:900px;
-	background-color: rgb(226, 252, 255);
-	border:1px dashed red;
+	background-color: azure;
 }
 
 header{
@@ -139,20 +142,23 @@ header{
 
 .top-content{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .left-content{
 	margin-bottom: 1.2rem;
-	width:30%;
+	width: 30%;
+	border: 2px dashed red;
 	.background-color();
 	.intro{
 		width:100%;
 		text-align: center;
-		padding-bottom: 4px;
+		padding-bottom: .7rem;
+		margin:1.3rem;
 		.bordered-bottom();
 		h1{
 			font-weight: bold;
-			font-size: 2.6rem;
+			font-size: 2.4rem;
 		}
 		p{
 			font-weight: 550;
@@ -172,17 +178,26 @@ header{
 	.paragraph-set();
 	border: 3px solid skyblue;
 	border-radius: .4rem;
-	margin-top: 2rem;
+	margin-top: 2.3rem;
 	div{
-		margin: .7rem 0;
+		margin: 1.2rem 0;
 	}
 }
 
 .right-content{
-	border:1px solid black;
 	width:70%;
+	border: 2px dashed blue;
 	.background-color();
 	.right-para{
 		.paragraph-set2();
+	}
+}
+footer{
+	width:100%;
+	border:2px dashed black;
+	p{
+		margin-top: 2rem;
+		font-size:1.4rem;
+		text-align: center;
 	}
 }

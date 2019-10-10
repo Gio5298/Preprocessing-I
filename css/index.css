@@ -166,9 +166,10 @@ table {
 }
 .paragraph-set2 p {
   font-size: 1.7rem;
+  margin-bottom: 1.5rem;
 }
 .background-color {
-  background-color: azure;
+  background-color: Azure;
 }
 html,
 body {
@@ -177,6 +178,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  background-color: aliceblue;
 }
 h1,
 h2,
@@ -193,13 +195,12 @@ p {
 body {
   margin: 0 auto;
   width: 900px;
-  background-color: #e2fcff;
-  border: 1px dashed red;
+  background-color: azure;
 }
 header {
   display: flex;
   justify-content: center;
-  background-color: azure;
+  background-color: Azure;
 }
 header .navDes {
   display: flex;
@@ -214,21 +215,24 @@ header a {
 }
 .top-content {
   display: flex;
+  flex-wrap: wrap;
 }
 .left-content {
   margin-bottom: 1.2rem;
   width: 30%;
-  background-color: azure;
+  border: 2px dashed red;
+  background-color: Azure;
 }
 .left-content .intro {
   width: 100%;
   text-align: center;
-  padding-bottom: 4px;
+  padding-bottom: 0.7rem;
+  margin: 1.3rem;
   border-bottom: 2px solid #ace5ff;
 }
 .left-content .intro h1 {
   font-weight: bold;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 .left-content .intro p {
   font-weight: 550;
@@ -259,7 +263,7 @@ header a {
   text-align: center;
   border: 3px solid skyblue;
   border-radius: 0.4rem;
-  margin-top: 2rem;
+  margin-top: 2.3rem;
 }
 .contact-section h2 {
   font-size: 2.1rem;
@@ -276,12 +280,12 @@ header a {
   font-size: 1.7rem;
 }
 .contact-section div {
-  margin: 0.7rem 0;
+  margin: 1.2rem 0;
 }
 .right-content {
-  border: 1px solid black;
   width: 70%;
-  background-color: azure;
+  border: 2px dashed blue;
+  background-color: Azure;
 }
 .right-content .right-para {
   text-align: center;
@@ -299,4 +303,14 @@ header a {
 }
 .right-content .right-para p {
   font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+footer {
+  width: 100%;
+  border: 2px dashed black;
+}
+footer p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
