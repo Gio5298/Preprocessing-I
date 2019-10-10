@@ -130,6 +130,17 @@ table {
 * {
   box-sizing: border-box;
 }
+.bordered-bottom {
+  border-bottom: 2px solid #ace5ff;
+}
+.paragraph-set h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ace5ff;
+}
+.paragraph-set p {
+  font-size: 1.6rem;
+}
 html,
 body {
   height: 100%;
@@ -174,9 +185,10 @@ header a {
 .left-content {
   border: 1px solid black;
   margin-bottom: 1.2rem;
+  width: 30%;
 }
 .left-content .intro {
-  width: 30%;
+  width: 100%;
   text-align: center;
   padding-bottom: 4px;
   border-bottom: 2px solid #ace5ff;
@@ -192,14 +204,22 @@ header a {
 .left-content .left-para {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
   text-align: center;
-  border: 1px dashed red;
 }
 .left-content .left-para h3 {
   margin: 10px 0;
   font-size: 1.8rem;
+  border-bottom: 2px solid #ace5ff;
 }
 .left-content .left-para p {
+  font-size: 1.6rem;
+}
+.left-content .contact-section h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ace5ff;
+}
+.left-content .contact-section p {
   font-size: 1.6rem;
 }

@@ -53,6 +53,19 @@ table {
     box-sizing: border-box;
 }
 
+.bordered-bottom{
+	border-bottom: 2px solid rgb(172, 229, 255);
+}
+.paragraph-set{
+	h3{
+		margin: 10px 0;
+		font-size: 1.8rem;
+	}
+	p{
+		font-size: 1.6rem;
+	}
+}
+
 html, body {
 	height: 100%;
 	font-family: 'Montserrat Alternates', sans-serif;
@@ -98,11 +111,12 @@ header{
 .left-content{
 	border: 1px solid black;
 	margin-bottom: 1.2rem;
+	width:30%;
 	.intro{
-		width:30%;
+		width:100%;
 		text-align: center;
 		padding-bottom: 4px;
-		border-bottom: 2px solid rgb(172, 229, 255);
+		.bordered-bottom();
 		h1{
 			font-weight: bold;
 			font-size: 2.6rem;
@@ -115,15 +129,12 @@ header{
 	.left-para{
 		display: flex;
 		flex-direction: column;
-		width: 30%;
+		width: 100%;
 		text-align: center;
-		border: 1px dashed red;
-		h3{
-			margin: 10px 0;
-			font-size: 1.8rem;
-		}
-		p{
-			font-size: 1.6rem;
-		}
+		.paragraph-set();
+		
 	}
+	.contact-section{
+		.paragraph-set();
+
 }
