@@ -60,10 +60,15 @@ table {
 	h3{
 		margin: 10px 0;
 		font-size: 1.8rem;
+		font-weight: 600;
+		.bordered-bottom();
 	}
 	p{
-		font-size: 1.6rem;
+		font-size: 1.7rem;
 	}
+}
+.background-color{
+	background-color: azure;
 }
 
 html, body {
@@ -94,6 +99,7 @@ body{
 header{
 	display: flex;
 	justify-content: center;
+	.background-color();
 	.navDes{
 		display: flex;
 		justify-content: space-evenly;
@@ -103,15 +109,14 @@ header{
 		font-size: 1.9rem;
 		color:gray;
 		text-decoration: none;
-		margin: 1rem 2rem;
-		border-bottom: 1px solid gray;
+		margin: 1.5rem 2rem;
 	}
 }
 
 .left-content{
-	border: 1px solid black;
 	margin-bottom: 1.2rem;
 	width:30%;
+	.background-color();
 	.intro{
 		width:100%;
 		text-align: center;
@@ -131,10 +136,18 @@ header{
 		flex-direction: column;
 		width: 100%;
 		text-align: center;
+		padding-bottom: 10px;
 		.paragraph-set();
-		
 	}
-	.contact-section{
-		.paragraph-set();
+}
 
+.contact-section{
+	.paragraph-set();
+	border: 3px solid skyblue;
+	border-radius: .4rem;
+	margin-top: 2rem;
+	text-align: center;
+	div{
+		margin: .7rem 0;
+	}
 }
