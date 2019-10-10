@@ -49,14 +49,14 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
-
 .bordered-bottom{
 	border-bottom: @bottom-border-color;
 }
-@bottom-border-color: 2px solid rgb(172, 229, 255);;
+@bottom-border-color: 2px solid rgb(172, 229, 255);
 .paragraph-set{
 	text-align: center;
 	h2{
@@ -96,27 +96,22 @@ table {
 	background-color: @background-color;
 }
 @background-color: Azure;
-
 html, body {
 	height: 100%;
 	font-family: 'Montserrat Alternates', sans-serif;
 }
-
 html{
 	font-size: 62.5%;
 	background-color: aliceblue;
 }
-
 h1, h2, h3, h4, h5 {
     font-family: 'Montserrat Alternates', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
 p{
 	font-family: 'Montserrat', sans-serif;
 }
-
 body{
 	margin:0 auto;
 	width:900px;
@@ -139,16 +134,13 @@ header{
 		margin: 1.5rem 2rem;
 	}
 }
-
 .top-content{
 	display: flex;
 	flex-wrap: wrap;
 }
-
 .left-content{
 	margin-bottom: 1.2rem;
 	width: 30%;
-	border: 2px dashed red;
 	.background-color();
 	.intro{
 		width:100%;
@@ -173,7 +165,6 @@ header{
 		.paragraph-set();
 	}
 }
-
 .contact-section{
 	.paragraph-set();
 	border: 3px solid skyblue;
@@ -183,10 +174,8 @@ header{
 		margin: 1.2rem 0;
 	}
 }
-
 .right-content{
 	width:70%;
-	border: 2px dashed blue;
 	.background-color();
 	.right-para{
 		.paragraph-set2();
@@ -194,10 +183,48 @@ header{
 }
 footer{
 	width:100%;
-	border:2px dashed black;
 	p{
 		margin-top: 2rem;
 		font-size:1.4rem;
 		text-align: center;
+	}
+}
+
+@media(max-width:500px){
+	*{
+		max-width: 100%;
+	}
+	body{
+        margin: 0 auto;
+		width:100%;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+		.background-color();
+		.navDes{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+		a{
+			border:.1rem solid rgb(172, 229, 255);
+		}
+
+	}
+	.top-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%
+	}
+	.left-content{
+		width: 100%;
+		.intro{
+			width: 100%;
+		}
+	}
+	.right-content{
+		width: 100%;
 	}
 }

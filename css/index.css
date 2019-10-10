@@ -220,7 +220,6 @@ header a {
 .left-content {
   margin-bottom: 1.2rem;
   width: 30%;
-  border: 2px dashed red;
   background-color: Azure;
 }
 .left-content .intro {
@@ -284,7 +283,6 @@ header a {
 }
 .right-content {
   width: 70%;
-  border: 2px dashed blue;
   background-color: Azure;
 }
 .right-content .right-para {
@@ -307,10 +305,46 @@ header a {
 }
 footer {
   width: 100%;
-  border: 2px dashed black;
 }
 footer p {
   margin-top: 2rem;
   font-size: 1.4rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  * {
+    max-width: 100%;
+  }
+  body {
+    margin: 0 auto;
+    width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: Azure;
+  }
+  header .navDes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header a {
+    border: 0.1rem solid #ace5ff;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .left-content {
+    width: 100%;
+  }
+  .left-content .intro {
+    width: 100%;
+  }
+  .right-content {
+    width: 100%;
+  }
 }
