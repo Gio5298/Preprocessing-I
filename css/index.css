@@ -133,6 +133,14 @@ table {
 .bordered-bottom {
   border-bottom: 2px solid #ace5ff;
 }
+.paragraph-set {
+  text-align: center;
+}
+.paragraph-set h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+}
 .paragraph-set h3 {
   margin: 10px 0;
   font-size: 1.8rem;
@@ -140,6 +148,23 @@ table {
   border-bottom: 2px solid #ace5ff;
 }
 .paragraph-set p {
+  font-size: 1.7rem;
+}
+.paragraph-set2 {
+  text-align: center;
+}
+.paragraph-set2 h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+  border-bottom: 2px solid #ace5ff;
+}
+.paragraph-set2 h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.paragraph-set2 p {
   font-size: 1.7rem;
 }
 .background-color {
@@ -169,6 +194,7 @@ body {
   margin: 0 auto;
   width: 900px;
   background-color: #e2fcff;
+  border: 1px dashed red;
 }
 header {
   display: flex;
@@ -185,6 +211,9 @@ header a {
   color: gray;
   text-decoration: none;
   margin: 1.5rem 2rem;
+}
+.top-content {
+  display: flex;
 }
 .left-content {
   margin-bottom: 1.2rem;
@@ -209,8 +238,13 @@ header a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  text-align: center;
   padding-bottom: 10px;
+  text-align: center;
+}
+.left-content .left-para h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
 }
 .left-content .left-para h3 {
   margin: 10px 0;
@@ -222,10 +256,15 @@ header a {
   font-size: 1.7rem;
 }
 .contact-section {
+  text-align: center;
   border: 3px solid skyblue;
   border-radius: 0.4rem;
   margin-top: 2rem;
-  text-align: center;
+}
+.contact-section h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
 }
 .contact-section h3 {
   margin: 10px 0;
@@ -238,4 +277,26 @@ header a {
 }
 .contact-section div {
   margin: 0.7rem 0;
+}
+.right-content {
+  border: 1px solid black;
+  width: 70%;
+  background-color: azure;
+}
+.right-content .right-para {
+  text-align: center;
+}
+.right-content .right-para h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+  border-bottom: 2px solid #ace5ff;
+}
+.right-content .right-para h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.right-content .right-para p {
+  font-size: 1.7rem;
 }

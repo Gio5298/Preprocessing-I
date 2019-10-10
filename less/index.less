@@ -57,11 +57,34 @@ table {
 	border-bottom: 2px solid rgb(172, 229, 255);
 }
 .paragraph-set{
+	text-align: center;
+	h2{
+		font-size: 2.1rem;
+		font-weight: 650;
+		margin-top: 1.3rem; 
+	}
 	h3{
 		margin: 10px 0;
 		font-size: 1.8rem;
 		font-weight: 600;
 		.bordered-bottom();
+	}
+	p{
+		font-size: 1.7rem;
+	}
+}
+.paragraph-set2{
+	text-align: center;
+	h2{
+		font-size: 2.1rem;
+		font-weight: 650;
+		margin-top: 1.3rem;
+		.bordered-bottom();
+	}
+	h3{
+		margin: 10px 0;
+		font-size: 1.8rem;
+		font-weight: 600;
 	}
 	p{
 		font-size: 1.7rem;
@@ -93,7 +116,8 @@ p{
 body{
 	margin:0 auto;
 	width:900px;
-	background-color: rgb(226, 252, 255);	
+	background-color: rgb(226, 252, 255);
+	border:1px dashed red;
 }
 
 header{
@@ -111,6 +135,10 @@ header{
 		text-decoration: none;
 		margin: 1.5rem 2rem;
 	}
+}
+
+.top-content{
+	display: flex;
 }
 
 .left-content{
@@ -135,7 +163,6 @@ header{
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		text-align: center;
 		padding-bottom: 10px;
 		.paragraph-set();
 	}
@@ -146,8 +173,16 @@ header{
 	border: 3px solid skyblue;
 	border-radius: .4rem;
 	margin-top: 2rem;
-	text-align: center;
 	div{
 		margin: .7rem 0;
+	}
+}
+
+.right-content{
+	border:1px solid black;
+	width:70%;
+	.background-color();
+	.right-para{
+		.paragraph-set2();
 	}
 }
