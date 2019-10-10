@@ -1,1 +1,350 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.bordered-bottom {
+  border-bottom: 2px solid #ace5ff;
+}
+.paragraph-set {
+  text-align: center;
+}
+.paragraph-set h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+}
+.paragraph-set h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: 2px solid #ace5ff;
+}
+.paragraph-set p {
+  font-size: 1.7rem;
+}
+.paragraph-set2 {
+  text-align: center;
+}
+.paragraph-set2 h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+  border-bottom: 2px solid #ace5ff;
+}
+.paragraph-set2 h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.paragraph-set2 p {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+.background-color {
+  background-color: Azure;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+html {
+  font-size: 62.5%;
+  background-color: aliceblue;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  margin: 0 auto;
+  width: 900px;
+  background-color: azure;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: Azure;
+}
+header .navDes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+header a {
+  font-size: 1.9rem;
+  color: gray;
+  text-decoration: none;
+  margin: 1.5rem 2rem;
+}
+.top-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-content {
+  margin-bottom: 1.2rem;
+  width: 30%;
+  background-color: Azure;
+}
+.left-content .intro {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.7rem;
+  margin: 1.3rem 0;
+  border-bottom: 2px solid #ace5ff;
+}
+.left-content .intro h1 {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.left-content .intro p {
+  font-weight: 550;
+  font-size: 2.1rem;
+}
+.left-content .left-para {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.left-content .left-para h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+}
+.left-content .left-para h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: 2px solid #ace5ff;
+}
+.left-content .left-para p {
+  font-size: 1.7rem;
+}
+.contact-section {
+  text-align: center;
+  border: 3px solid skyblue;
+  border-radius: 0.4rem;
+  margin-top: 2.3rem;
+}
+.contact-section h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+}
+.contact-section h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: 2px solid #ace5ff;
+}
+.contact-section p {
+  font-size: 1.7rem;
+}
+.contact-section div {
+  margin: 1.2rem 0;
+}
+.right-content {
+  width: 70%;
+  background-color: Azure;
+}
+.right-content .right-para {
+  text-align: center;
+}
+.right-content .right-para h2 {
+  font-size: 2.1rem;
+  font-weight: 650;
+  margin-top: 1.3rem;
+  border-bottom: 2px solid #ace5ff;
+}
+.right-content .right-para h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.right-content .right-para p {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+footer {
+  width: 100%;
+}
+footer p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  * {
+    max-width: 100%;
+  }
+  body {
+    margin: 0 auto;
+    width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: Azure;
+  }
+  header .navDes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header a {
+    border: 0.1rem solid #ace5ff;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .left-content {
+    width: 100%;
+  }
+  .left-content .intro {
+    width: 100%;
+  }
+  .right-content {
+    width: 100%;
+  }
+}
